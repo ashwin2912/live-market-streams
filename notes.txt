@@ -1,0 +1,19 @@
+Risk Measure v/s Risk Metric
+
+Risk Measures:
+ES - Expected Shortfall
+
+Python libraries of interest:
+pypi.org/project/var
+pypi.org/project/QuantStats
+
+Related papers:
+Adding this to test git push
+
+Comparison of risk forecasts for cryptocurrencies
+
+Reinforcement learning 
+https://arxiv.org/pdf/2207.02458.pdf
+
+Databricks accelerators: 
+https://www.databricks.com/blog/2020/05/27/modernizing-risk-management-part-1-streaming-data-ingestion-rapid-model-development-and-monte-carlo-simulations-at-scale.html
