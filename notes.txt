@@ -8,8 +8,6 @@ pypi.org/project/var
 pypi.org/project/QuantStats
 
 Related papers:
-Adding this to test git push
-
 Comparison of risk forecasts for cryptocurrencies
 
 Reinforcement learning 
@@ -17,3 +15,18 @@ https://arxiv.org/pdf/2207.02458.pdf
 
 Databricks accelerators: 
 https://www.databricks.com/blog/2020/05/27/modernizing-risk-management-part-1-streaming-data-ingestion-rapid-model-development-and-monte-carlo-simulations-at-scale.html
+
+
+Kafka:
+Tutorial: https://kafkaide.com/learn/how-to-start-using-apache-kafka-in-python/
+
+
+Web Socket:
+Coinbase has a web-socket and a REST - python SDK, documentation:
+https://github.com/coinbase/coinbase-advanced-py/blob/master/README.md
+https://docs.cloud.coinbase.com/advanced-trade-api/docs/sdk-rest-overview#getting-started-with-your-first-trading-strategy
+
+Progress:
+
+- We are using a web socket from Coinbase as our source of data, Coinbase has a python SDK that makes this incredibly simple. 
+- Once we get the data through the web socket, we produce this to a Kafka topic
