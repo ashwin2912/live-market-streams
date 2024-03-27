@@ -12,7 +12,7 @@ def publish_message(kafka_producer, topic_name, key, value):
         kafka_producer.flush()
         print('Message published successfully.')
     except Exception as ex:
-        print(str(ex))
+        print(type(ex))
 
 
 if __name__ == '__main__':
