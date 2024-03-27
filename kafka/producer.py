@@ -15,8 +15,6 @@ def on_message(msg):
     message_dict = ast.literal_eval(msg)
     publish_message(kafka_producer, 'socket-messages', json.dumps(message_dict))
 
-
-
 # wait 10 secxonds
 time.sleep(10)
 
