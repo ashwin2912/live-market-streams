@@ -28,5 +28,64 @@ https://docs.cloud.coinbase.com/advanced-trade-api/docs/sdk-rest-overview#gettin
 
 Progress:
 
-- We are using a web socket from Coinbase as our source of data, Coinbase has a python SDK that makes this incredibly simple. 
-- Once we get the data through the web socket, we produce this to a Kafka topic
+Development:
+
+Completed
+- Reading data from Web-socket
+- Producing the read data to a Kafka topic
+- Consuming data from spark and displaying in the console
+
+
+Sample Incoming Message:
+{
+  "channel": "ticker",
+  "client_id": "",
+  "timestamp": "2024-03-27T19:15:39.568733823Z",
+  "sequence_num": 78,
+  "events": [
+    {
+      "type": "update",
+      "tickers": [
+        {
+          "type": "ticker",
+          "product_id": "BTC-USD",
+          "price": "68793.42",
+          "volume_24_h": "19233.74710837",
+          "low_24_h": "68369.62",
+          "high_24_h": "71789.85",
+          "low_52_w": "24750",
+          "high_52_w": "73835.57",
+          "price_percent_chg_24_h": "-1.45173473713102"
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "channel": "ticker",
+  "client_id": "",
+  "timestamp": "2024-03-27T19:15:39.267707869Z",
+  "sequence_num": 76,
+  "events": [
+    {
+      "type": "update",
+      "tickers": [
+        {
+          "type": "ticker",
+          "product_id": "ETH-USD",
+          "price": "3484.88",
+          "volume_24_h": "114902.23358306",
+          "low_24_h": "3458",
+          "high_24_h": "3665.95",
+          "low_52_w": "1520.85",
+          "high_52_w": "4093.88",
+          "price_percent_chg_24_h": "-2.24246946549896"
+        }
+      ]
+    }
+  ]
+}
+
+
+
