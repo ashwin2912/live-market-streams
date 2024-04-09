@@ -1,2 +1,1 @@
-# live-var-estimation
-System that reads streamed market data and estimates Value at Risk for any given portfolio. 
+Streaming Infrastructure to read live market data from a web-socket and prepare the data for downstream visualization and analytics.
