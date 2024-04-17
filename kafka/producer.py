@@ -35,8 +35,8 @@ if __name__ == '__main__':
     client.open()
     client.subscribe(product_ids=["BTC-USD"], channels=["level2","heartbeats"])
     
-    time.sleep(10)
+    time.sleep(1000000)
     if kafka_producer is not None:
-        kafka_producer.close()
+       kafka_producer.close()
 
 
